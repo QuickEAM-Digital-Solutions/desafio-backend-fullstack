@@ -1,0 +1,29 @@
+/* Minimal base styles — feel free to replace them or use any CSS
+   solution/library you prefer (Tailwind, CSS Modules, MUI, shadcn/ui...). */
+
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1f2328;
+  background: #f6f8fa;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2 { margin: 0 0 0.75rem; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+.narrow { max-width: 380px; margin-top: 10vh; }
+.stack { display: flex; flex-direction: column; gap: 0.75rem; }
+.row { display: flex; align-items: center; gap: 0.75rem; }
+.between { justify-content: space-between; }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; margin-top: 1rem; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+
+.card { background: #fff; border: 1px solid #d0d7de; border-radius: 8px; padding: 1rem; }
+.muted { color: #656d76; }
+.error { color: #cf222e; }
+
+input, select, textarea, button { font: inherit; padding: 0.5rem 0.75rem; border-radius: 6px; border: 1px solid #d0d7de; }
+button { background: #1f6feb; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #1a5fd0; }
